@@ -1,0 +1,6 @@
+com\events\analytics\AnalyticsServiceTest.class
+com\events\EventApplicationTests.class
+com\events\email\EmailOrderServiceTest.class
+com\events\promotion\PromotionServiceTest.class
+com\events\email\EmailCustomerServiceTest.class
+com\events\ticket\TicketServiceTest.class
