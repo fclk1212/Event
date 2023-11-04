@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class TicketService
 {
-
     public void createTicket(Order order)
     {
         log.info("Creating ticket for helpdesk service for order {}", order);

@@ -15,7 +15,7 @@ public class LoggingAspect
 {
 
     //AOP expression for which methods shall be intercepted
-    @Around("execution(* com.linkedin.events..*(..)))")
+    @Around("execution(* com.events..*(..)))")
     public Object profileAllMethods(ProceedingJoinPoint proceedingJoinPoint) throws Throwable
     {
         MethodSignature methodSignature = (MethodSignature) proceedingJoinPoint.getSignature();

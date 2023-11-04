@@ -27,18 +27,31 @@ class EmailCustomerServiceTest
 
     @Test
     void registerCustomer_forNewCustomer_sendsAnEmail(){
-        
-        Customer customer = new Customer("fatmacelik@demo.com");
+
+        //given
+        Customer customer = new Customer("fatmcelik@demo.com");
+
+        //when
         customerService.register(customer);
+
+        //then
         then(emailService).should(times(1)).sendRegisterEmail(customer);
     }
 
     @Test
     void removeCustomer_forExistingCustomer_sendsAnEmail(){
-        
-        Customer customer = new Customer("fatmacelik@demo.com");
+
+        //given
+        Customer customer = new Customer("fatmcelik@demo.com");
         customerRepository.save(customer);
+
+        //when
         customerService.remove(customer);
+
+        //then
         then(emailService).should(times(1)).sendCustomerRemovedEmail(customer);
     }
+
+
+
 }

@@ -27,7 +27,7 @@ class AnalyticsServiceTest
     void registerCustomer_forNewCustomer_callsAnalytics(){
 
         //given
-        Customer customer = new Customer("fatmacelik@demo.com");
+        Customer customer = new Customer("fatmcelik@demo.com");
         customerRepository.save(customer);
 
         //when

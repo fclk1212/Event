@@ -11,7 +11,6 @@ import static java.lang.Thread.sleep;
 @Component
 public class AnalyticsService
 {
-
     @SneakyThrows
     public void registerNewCustomer(Customer customer)
     {

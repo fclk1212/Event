@@ -15,9 +15,6 @@ public class CustomerService {
     public void register(Customer customer) {
         customerRepository.save(customer);
         publisher.publishEvent(new CustomerRegisteredEvent(customer));
-        // promotion
-        // external calls
-        // crm
     }
 
     public void remove(Customer customer) {

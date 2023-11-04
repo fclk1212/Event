@@ -13,6 +13,8 @@ import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.test.annotation.DirtiesContext;
 
 import java.math.BigDecimal;
+
+import static com.events.order.Order.OrderStatus.SAVED;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.times;
 
@@ -74,14 +76,14 @@ class EmailOrderServiceTest
 
     private Order givenOrder(Customer customer)
     {
-        Order order = new Order(Order.OrderStatus.SAVED);
+        Order order = new Order(SAVED);
         order.setCustomer(customer);
         return orderRepository.save(order);
     }
 
     private Customer givenCustomer(int rewardPoints)
     {
-        Customer customer = new Customer("fatmacelik@demo.com");
+        Customer customer = new Customer("fatmcelik@demo.com");
         customer.setRewardPoints(BigDecimal.valueOf(rewardPoints));
         return customerRepository.save(customer);
     }
