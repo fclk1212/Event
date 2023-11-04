@@ -1,0 +1,17 @@
+com\events\order\OrderService.class
+com\events\email\EmailService.class
+com\events\logging\LoggingAspect.class
+com\events\order\OrderCompletedEvent.class
+com\events\order\Order.class
+com\events\promotion\PromotionService.class
+com\events\order\Order$OrderStatus.class
+com\events\EventApplication.class
+com\events\customer\CustomerService.class
+com\events\email\EmailListeners.class
+com\events\customer\CustomerRemovedEvent.class
+com\events\customer\CustomerRegisteredEvent.class
+com\events\customer\CustomerRepository.class
+com\events\analytics\AnalyticsService.class
+com\events\customer\Customer.class
+com\events\order\OrderRepository.class
+com\events\ticket\TicketService.class
